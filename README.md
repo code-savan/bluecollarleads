@@ -1,24 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blue Collar Leads - Smart Chatbot Landing Page
 
-## Getting Started
+A modern, responsive landing page for a chatbot service aimed at small, local service businesses like plumbers, HVAC techs, electricians, and roofers.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Clean, minimal design with a "Set and Forget" theme
+- Fully responsive layout with mobile-first approach
+- Smooth scroll animations and transitions
+- Built with Next.js and Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Page Sections
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Hero Section** - Main banner with headline and CTA buttons
+2. **How It Works** - Three key benefits with icons
+3. **Why It's Set & Forget** - Pain points vs. value propositions
+4. **Video Demo** - Feature showcase video
+5. **Testimonials** - Customer success stories
+6. **Pricing** - Three-tier pricing structure
+7. **Final CTA** - Strong call-to-action
+8. **Footer** - Essential links and attribution
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
+
+- Next.js 15
+- Tailwind CSS 4
+- React 19
+- Intersection Observer API for scroll animations
+
+## 🏃‍♂️ Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. View the site at: `http://localhost:3000`
+
+## 📱 Mobile Optimization
+
+The landing page is designed with a mobile-first approach, ensuring an optimal viewing experience across all device sizes.
+
+## 🎨 Customization
+
+You can easily customize:
+- The accent color (currently set to blue) in globals.css
+- Font families (currently using DM Sans for headings and Inter for body text)
+- Content and messaging throughout the page.jsx file
+
+## 📝 License
+
+MIT
+
+---
+
+Built by Code Savan 💻
 
 ## Learn More
 
