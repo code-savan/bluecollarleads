@@ -118,91 +118,96 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">The Difference is Clear</h2>
 
           <div className="glass-card p-1 rounded-lg overflow-hidden mb-4">
-            <table className="w-full">
-              <thead>
-                <tr>
-                  <th className="text-2xl font-bold p-6 text-left text-[var(--negative)] w-1/2">Without Us</th>
-                  <th className="text-2xl font-bold p-6 text-left text-[var(--accent)] w-1/2">With Us</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-[rgba(255,255,255,0.05)]">
-                  <td className="p-6 align-top border-r border-[rgba(255,255,255,0.05)]">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 6 6 18"></path>
-                        <path d="m6 6 12 12"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Missed Leads</h4>
-                        <p className="text-base">Missing calls while on jobs costs you thousands in lost revenue.</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="p-6 align-top">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6 9 17l-5-5"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">Works 24/7 — even while you sleep</h4>
-                        <p className="text-base text-[var(--dark-gray)]">Your virtual receptionist never takes breaks or days off.</p>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-b border-[rgba(255,255,255,0.05)]">
-                  <td className="p-6 align-top border-r border-[rgba(255,255,255,0.05)]">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 6 6 18"></path>
-                        <path d="m6 6 12 12"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Scattered Information</h4>
-                        <p className="text-base">Customer details spread across texts, voicemails, and sticky notes.</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="p-6 align-top">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6 9 17l-5-5"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">No apps to install or dashboards to manage</h4>
-                        <p className="text-base text-[var(--dark-gray)]">Everything integrates with tools you already use.</p>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-6 align-top border-r border-[rgba(255,255,255,0.05)]">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 6 6 18"></path>
-                        <path d="m6 6 12 12"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Ghosted Clients</h4>
-                        <p className="text-base">Forgetting follow-ups damages your reputation and repeat business.</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="p-6 align-top">
-                    <div className="flex items-start gap-4">
-                      <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 6 9 17l-5-5"></path>
-                      </svg>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">We build it. You relax.</h4>
-                        <p className="text-base text-[var(--dark-gray)]">Full setup and customization done for you by our team.</p>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            {/* Header - Responsive */}
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-6 border-b md:border-b-0 md:border-r border-[rgba(255,255,255,0.05)]">
+                <h3 className="text-2xl font-bold text-[var(--negative)]">Without Us</h3>
+              </div>
+              <div className="p-6 border-b border-[rgba(255,255,255,0.05)]">
+                <h3 className="text-2xl font-bold text-[var(--accent)]">With Us</h3>
+              </div>
+            </div>
+
+            {/* Row 1 - Responsive */}
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-6 border-b md:border-b-0 md:border-r border-[rgba(255,255,255,0.05)]">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Missed Leads</h4>
+                    <p className="text-base">Missing calls while on jobs costs you thousands in lost revenue.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 border-b border-[rgba(255,255,255,0.05)]">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">Works 24/7 — even while you sleep</h4>
+                    <p className="text-base text-[var(--dark-gray)]">Your virtual receptionist never takes breaks or days off.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Row 2 - Responsive */}
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-6 border-b md:border-b-0 md:border-r border-[rgba(255,255,255,0.05)]">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Scattered Information</h4>
+                    <p className="text-base">Customer details spread across texts, voicemails, and sticky notes.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 border-b border-[rgba(255,255,255,0.05)]">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">No apps to install or dashboards to manage</h4>
+                    <p className="text-base text-[var(--dark-gray)]">Everything integrates with tools you already use.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Row 3 - Responsive */}
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="p-6 md:border-r border-[rgba(255,255,255,0.05)]">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--negative)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--negative)]">Ghosted Clients</h4>
+                    <p className="text-base">Forgetting follow-ups damages your reputation and repeat business.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <svg className="lucide-icon text-[var(--accent)] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                  <div>
+                    <h4 className="font-bold text-lg mb-1 text-[var(--accent)]">We build it. You relax.</h4>
+                    <p className="text-base text-[var(--dark-gray)]">Full setup and customization done for you by our team.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
